@@ -169,6 +169,8 @@ var ToDoList = function (_React$Component) {
               } else {
                 return task.completed;
               }
+            }).sort(function (a, b) {
+              return a.id - b.id;
             }).map(function (task) {
               return React.createElement(Task, {
                 key: task.id,
